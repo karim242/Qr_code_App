@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fourth_task/constant.dart';
+import 'package:fourth_task/feature/home/views/custom_layout.dart';
+import 'package:fourth_task/feature/home/views/result_view.dart';
 import 'package:fourth_task/feature/home/widgets/choice_row.dart';
 import 'package:fourth_task/feature/home/widgets/custom_bar.dart';
 import 'package:fourth_task/feature/home/widgets/custom_title_sub_title.dart';
@@ -18,9 +20,17 @@ class ScanBody extends StatelessWidget {
         child: Column(
           children: [
             CustomBar(
-              child: SvgPicture.asset(listIcon),
+              child: GestureDetector(
+                onTap: (){
+                   Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                const ScanView(child: ResultsView())));
+                },
+                child: SvgPicture.asset(listIcon)),
             ),
-            CustomTitleAndSubTitle(
+            const CustomTitleAndSubTitle(
               title: 'Scan OR code',
               subTitle:
                   'Place qr code inside the frame to scan pleasea void shake to get results quickly',
@@ -39,7 +49,7 @@ class ScanBody extends StatelessWidget {
             const SizedBox(
               height: 44,
             ),
-            ChoiceRow(),
+          const  ChoiceRow(),
             const SizedBox(
               height: 50,
             ),

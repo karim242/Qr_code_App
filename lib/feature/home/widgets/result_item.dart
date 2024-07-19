@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:fourth_task/constant.dart';
 import 'package:fourth_task/feature/home/controller/data_cubit/data_cubit.dart';
 import 'package:fourth_task/feature/home/controller/data_cubit/data_state.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 class ResultItemsListView extends StatelessWidget {
   const ResultItemsListView({

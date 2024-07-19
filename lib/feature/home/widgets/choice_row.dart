@@ -27,7 +27,7 @@ class ChoiceRow extends StatelessWidget {
           function: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>  QRScannerScreen()),
+              MaterialPageRoute(builder: (context) =>  const QRScannerScreen()),
             );
           },
         )
