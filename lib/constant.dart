@@ -9,7 +9,7 @@ const   String imagePath1 = 'assets/images/img1.svg';
  const   String secondIcon='assets/images/secondIcon.svg';
  const   String pauseIcon='assets/images/pauseIcon.svg';
  const   String resultIcon='assets/images/resultIcon.svg';
-
+const  String kDataBox= 'data';
 
 
 

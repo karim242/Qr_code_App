@@ -22,13 +22,18 @@ class ChoiceRow extends StatelessWidget {
             SvgPicture.asset(flashIcon),
           ],
         ),
-                    const SizedBox(height: 27.5),
-
-         CustomButton(label: 'Place Camera Code',
-         function: (){
- Navigator.push(context, 
-                        MaterialPageRoute(builder: (context) => const ScanView(child: ResultsView(),)));
-         },)
+        const SizedBox(height: 27.5),
+        CustomButton(
+          label: 'Place Camera Code',
+          function: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ScanView(
+                          child: ResultsView(),
+                        )));
+          },
+        )
       ],
     );
   }
