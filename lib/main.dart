@@ -8,8 +8,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   await Hive.initFlutter();
-  await Hive.openBox(kDataBox);
-  Hive.registerAdapter(DataModelAdapter());
+  await Hive.openBox<String>(kDataBox);
+  //Hive.registerAdapter(DataModelAdapter());
   runApp(const MyApp());
 }
 

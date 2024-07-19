@@ -8,7 +8,7 @@ final Widget child;
     return Scaffold(
       backgroundColor: const Color(0x0ff00000),
       body: Container(
-        margin: const EdgeInsets.only(top: 100),
+        margin: const EdgeInsets.only(top: 90),
         decoration:const BoxDecoration(
           color:  Color(0xffFFFFFF),
           borderRadius:  BorderRadius.only(

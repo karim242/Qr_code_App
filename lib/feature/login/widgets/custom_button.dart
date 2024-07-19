@@ -29,7 +29,7 @@ class CustomButton extends StatelessWidget {
           },
         
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(12.0),
             child: Text(
               label,
               style:const TextStyle(color:  Color(0xffFFFFFF), fontSize: 16,fontWeight: FontWeight.w700),

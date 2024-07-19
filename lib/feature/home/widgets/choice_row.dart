@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fourth_task/constant.dart';
-import 'package:fourth_task/feature/home/views/result_view.dart';
-import 'package:fourth_task/feature/home/views/scan_view.dart';
+import 'package:fourth_task/feature/home/views/camera_view.dart';
 import 'package:fourth_task/feature/login/widgets/custom_button.dart';
 
 class ChoiceRow extends StatelessWidget {
@@ -27,11 +26,9 @@ class ChoiceRow extends StatelessWidget {
           label: 'Place Camera Code',
           function: () {
             Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const ScanView(
-                          child: ResultsView(),
-                        )));
+              context,
+              MaterialPageRoute(builder: (context) =>  QRScannerScreen()),
+            );
           },
         )
       ],

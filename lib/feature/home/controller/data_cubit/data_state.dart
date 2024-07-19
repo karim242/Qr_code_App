@@ -6,8 +6,7 @@ class AddDataLoading extends AddDataState {}
 
 class AddDataSuccess extends AddDataState {}
 
-class AddDataFailure extends AddDataState {
-  final String errMessage;
 
-  AddDataFailure(this.errMessage);
-}
+
+class AddDataFailure extends AddDataState {}
+  

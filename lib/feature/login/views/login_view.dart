@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fourth_task/constant.dart';
-import 'package:fourth_task/feature/home/views/scan_view.dart';
-import 'package:fourth_task/feature/home/widgets/scan_body.dart';
+import 'package:fourth_task/feature/home/views/custom_layout.dart';
+import 'package:fourth_task/feature/home/views/scan_view_body.dart';
 import 'package:fourth_task/feature/login/widgets/custom_button.dart';
 import 'package:fourth_task/feature/login/widgets/custom_text_fieald.dart';
 
